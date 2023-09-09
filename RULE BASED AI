@@ -1,0 +1,23 @@
+import time
+now = time.ctime()
+
+qna = {
+    "hi":"hey",
+    "how are you": "i'm fine ,what about you?",
+    "what is your name ":"my name is dev",
+    "where do you  live?": "i live in system",
+    "what is the time now":now,
+    "who is icon star":"allu arjun",
+    "what is national animal":"national animal is tiger",
+    "do you have friends ": " yes, i have many friends",
+    "okay,it was nice to talk with you":"thank you",
+    "bye,see you again":"ok bye bye"
+    
+    }
+
+while True :
+    qs =input(' user -')
+    if (qs=="quit"):
+         break
+    else:
+        print('AI bot -' +qna[qs])
